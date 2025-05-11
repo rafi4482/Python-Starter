@@ -70,4 +70,17 @@ for i in data_list:
     if type(i) == int:
         num_list.append(i)
 
+# problem 11
+rhyme = "Twinkle, twinkle, little star. How I wonder what you are!"
+rhyme = rhyme.lower()
+char_count = {}
+
+for char in rhyme:
+    if char.isalpha():
+        if char not in char_count:
+            char_count[char] = 1
+        else:
+            char_count[char] += 1
+
+print(max(char_count,key=char_count.get))
 
