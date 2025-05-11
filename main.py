@@ -13,4 +13,20 @@ def find_elder(age1,age2):
     else:
         return f"Second brother is older ages {age2}"
 
-print(find_elder(12,13))
+
+# problem 4
+numbers=[3, 5, 1, 9, 7, 2, 8 ]
+print(numbers.index(7))
+
+# problem 5
+numbers=[3, 5, 1, 9, 7, 2, 8 ]
+numbers.sort()
+print(numbers)
+
+# problem 6
+def isLandscape(width,height):
+    if width > height:
+        return "Landscape"
+    else:
+        return "Potrait"
+    
