@@ -84,3 +84,25 @@ for char in rhyme:
 
 print(max(char_count,key=char_count.get))
 
+# problem 12
+
+# problem 13
+
+# problem 14
+list_1 = [4, 9, 8, 7, 5, 2, 13]
+list_1.sort(reverse=True)
+print(max(list_1)-min(list_1))
+
+# problem 15
+
+student_1 = [40, 35, 70, 90, 56]
+student_2 = [57, 35, 80, 98, 46]
+
+def check_res(marks):
+    for mark in range(len(marks)):
+        if marks[mark] < 40:
+            print("Failed")
+            return
+        
+    average = sum(marks) / len(marks)
+    print("Average Marks:", average)    
