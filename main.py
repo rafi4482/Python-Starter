@@ -55,4 +55,11 @@ def guess_game():
     else:
         print("Your Guess Is Correct!")
 
+# problem 9
+my_list = [4, 8, 7, 4,3,6,2,1,9]
+
+for i in range(len(my_list)):
+    if my_list[i] == 6:
+        print("Number 6 is available in the list")
+        
 
