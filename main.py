@@ -62,4 +62,12 @@ for i in range(len(my_list)):
     if my_list[i] == 6:
         print("Number 6 is available in the list")
         
+# problem 10
+data_list = [13, 24, 'Karim', {'name': 'guru'}, 45, 17]
+num_list = []
+
+for i in data_list:
+    if type(i) == int:
+        num_list.append(i)
+
 
