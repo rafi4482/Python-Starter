@@ -41,3 +41,18 @@ def fizzbuzz(num):
     else:
         return "Not a Fizz-buzz number"
     
+# problem 8
+def guess_game():
+    user_input = int(input("Enter a number from 1 to 9: "))
+    correct_num = 6
+
+    if user_input < 1 or user_input > 9:
+        print("Enter a number from 1 to 9")
+    elif user_input < correct_num:
+        print("Your guess is almost there") 
+    elif user_input > correct_num:
+        print("Your guess is higher") 
+    else:
+        print("Your Guess Is Correct!")
+
+
