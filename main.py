@@ -85,8 +85,38 @@ for char in rhyme:
 print(max(char_count,key=char_count.get))
 
 # problem 12
+list1 = [3, 5, 7, 4, 8, 8]
+list2 = [4, 9, 8, 7, 1, 1, 13]
+
+dict1 = {}
+dict2 = {}
+common_items = []
+
+for num in list1:
+    if num in dict1:
+        dict1[num] += 1
+    else:
+        dict1[num] = 1
+
+for num in list2:
+    if num in dict2:
+        dict2[num] += 1
+    else:
+        dict2[num] = 1
+
+for key in dict1:
+    if key in dict2:
+        common_items.append(key)
+
+print(common_items)
+print(sum(common_items))
 
 # problem 13
+dict1 = {'age': 13, 'id': 12, 'address': 'Banani', 'course': 'Python'}
+dict2 = {'address': 'Rupnagar', 'id': 25, 'course': 'MERN'}
+
+common_keys = dict1.keys() & dict2.keys()
+print(common_keys)
 
 # problem 14
 list_1 = [4, 9, 8, 7, 5, 2, 13]
